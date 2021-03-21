@@ -7,15 +7,21 @@ import { GlobalModule } from './global/global.module';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import { MaterialModule } from './material/material.module';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule, 
-    GlobalModule
+    GlobalModule,
+    MaterialModule
+
+  ],
+  exports: [
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
